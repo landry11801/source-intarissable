@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Intarissable</title>
+    <link rel="" href="css/style.css">
+    <style>
+        body{
+    margin:0;
+    font-family:arial, sans-serif;
+}
+.container{
+    display:grid;
+    grid-template-columns:180px 1fr 210px;
+    grid-template-rows:160px 1fr 140px;
+    grid-template-areas:
+    "header header header"
+    "menu content sidebar"
+    "footer footer footer";
+    height:100vh;
+}
+.header{
+    grid-area:header;
+    background:rgb(128, 128, 10);
+    color:black;
+    text-align:center;
+    padding:20px;
+
+}
+.menu{
+    grid-area:menu;
+    background:rgb(254,21,30);
+    padding:10px;
+}
+.content{
+    grid-area:content;
+    background:lightblue;
+    padding:20px;
+    justify-content:center;
+}
+.sidebar{
+    grid-area:sidebar;
+    background:rgb(128, 128, 200);
+    padding:10px;
+}
+footer{
+    grid-area:footer;
+    background:black;
+    background-size:20px;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:10px;
+}
+ .menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:block;
+}
+ .menu ul li{
+    margin:0;
+    font-size:16px;
+}
+.menu ul li a{
+    float:left;
+    padding:14px 16px;
+    color:black;
+    text-decoration:none;
+    transition:background 0.3s;
+    
+}
+ .menu ul li a:hover{
+    background-color:blue;
+}
+.footer{
+    padding:0;
+}
+.footer ul{
+    list-style:none;
+    display:flex;
+    margin:0;
+    justify-content:center;
+}
+.footer ul li{
+    margin:0;
+    font-size:16px;
+}
+.footer ul li a{
+    padding:14px 20px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:color 0.3s;
+    
+}
+.footer ul li a:hover{
+    background-color:blueviolet;
+}
+hr{
+    height:4px;
+    background-color:aqua;
+    border-radius:3px;
+}
+ 
+.buttons{
+            margin-top:30px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .buttons a{
+            padding:12px 20px;
+            background:#004080;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            transition:background 0.3s;
+        }
+        .buttons a:hover{
+            background:#0066cc;
+        }
+
+        @media(max-width:480px){
+            .container{
+               grid-template-areas:
+               "header"
+               "menu"
+               "main"
+               "sidebar"
+               "footer";
+            grid-template-columns:1fr;
+         }
+    
+        }
+        .bible{
+            background-image:url(/image/biblia.jpeg);
+            background-size:cover;
+            height:700px;
+            width:100%;
+        }
+         img{
+            width:80px;
+            float:left;  
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <img src="image/logo.png" alt="logo du site">
+            
+            <div class="texto">
+                <h1>Source Intarissable</h1>
+                <p>Ce site est un moyen de vous aider á rester connecter spirituellement parlant.</p>
+                <p>En plus á puiser quelque chose de positive.</p>
+            </div>
+        </header>
+        <nav class="menu">
+            <ul> 
+                <li><a href="index.html">accueil</li>
+                <li><a href="vrai-chemin.html">Vrai Chemin</a></li>
+                <li><a href="sanctification.html">Sanctification</a></li>
+                <li><a href="réveil spirituel.html">Réveil Spirituel</a></li>
+                <li><a href="consécration.html">Consécration</a></li>
+                <li><a href="esprit-saint.html">Esprit-Saint</a></li>
+                <li><a href="pardon.html">Pardon</a></li>
+                <li><a href="apropos.html">Apropos</a></li>
+                <li><a href="contactez-nous.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="bible"> </div>
+
+        <div class="buttons">
+        <a href="vrai-chemin.html">suiv</a>
+        </div>
+      
+        </main>
+        <aside class="sidebar">
+           <h2>Quelque explications supplémentaires</h2>
+           <p>Cinq caracteristiques que Jesus donne dans ce sermon pour nous montrer les évenements,</p>
+           <p>qui se produiront au commencement des douleurs de la <a href="inf1.html">fin des temps</a>:</p>
+           <ol>
+            <li>Guerres, famines, tremblements de terre et épidémies.</li>
+            <li>Persécution mondiale des chrétien</li>
+            <li>Apostasie et trahison parmi les chrétiens</li>
+            <li>Faux prophètes avec leurs cultes</li>
+            <li>Amour qui se refroidit</li>
+           </ol>
+        </aside>
+        <footer class="footer">
+            
+                <img src="image/logo.png"  alt="logo du site">
+            <ul>
+                <li><a href="fruit de l'esprit.html">Fruit de L'Esprit</a></li>
+                <li><a href="prophétie.html">Prophétie</a></li>
+                <li><a href="nouvelle jerusalem.html">Nouvelle Jerusalem</a></li>
+                <li><a href="prier éfficacement.html">Prier Éfficacement</a></li>
+                <li><a href="apostasie.html">Apostasie</a></li>
+            </ul>
+            <div>
+                <p><small>Source Intarissable est préparée pour orienter des âmes,qui sont troublées.</small></p>
+                <p><small>Copyright 2025 source intarissable.Tous droits reservés.</small></p>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+    
+
+
+
+</body>
+</html>

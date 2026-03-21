@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardon</title>
+     <link rel="" href="/css/style.css">
+     <style>
+        body{
+    margin:0;
+    font-family:arial, sans-serif;
+}
+.container{
+    display:grid;
+    grid-template-columns:180px 1fr 210px;
+    grid-template-rows:160px 1fr 140px;
+    grid-template-areas:
+    "header header header"
+    "menu content sidebar"
+    "footer footer footer";
+    height:100vh;
+}
+.header{
+    grid-area:header;
+    background:rgb(128, 128, 10);
+    color:black;
+    text-align:center;
+    padding:20px;
+
+}
+.menu{
+    grid-area:menu;
+    background:rgb(254,21,30);
+    padding:10px;
+}
+.content{
+    grid-area:content;
+    background:lightblue;
+    padding:20px;
+    justify-content:center;
+}
+.sidebar{
+    grid-area:sidebar;
+    background:rgb(128, 128, 200);
+    padding:10px;
+}
+footer{
+    grid-area:footer;
+    background:black;
+    background-size:20px;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:10px;
+}
+ .menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:block;
+}
+ .menu ul li{
+    margin:0;
+    font-size:16px;
+}
+.menu ul li a{
+    float:left;
+    padding:14px 16px;
+    color:black;
+    text-decoration:none;
+    transition:background 0.3s;
+    
+}
+ .menu ul li a:hover{
+    background-color:blue;
+}
+.footer{
+    padding:0;
+}
+.footer ul{
+    list-style:none;
+    display:flex;
+    margin:0;
+    justify-content:center;
+}
+.footer ul li{
+    margin:0;
+    font-size:16px;
+}
+.footer ul li a{
+    padding:14px 20px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:color 0.3s;
+    
+}
+.footer ul li a:hover{
+    background-color:blueviolet;
+}
+hr{
+    height:4px;
+    background-color:aqua;
+    border-radius:3px;
+}
+ 
+.buttons{
+            margin-top:30px;
+            display:flex;
+            justify-content:space-between;
+        }
+        .buttons a{
+            padding:12px 20px;
+            background:#004080;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            transition:background 0.3s;
+        }
+        .buttons a:hover{
+            background:#0066cc;
+        }
+
+        @media(max-width:480px){
+            .container{
+               grid-template-areas:
+               "header"
+               "menu"
+               "main"
+               "sidebar"
+               "footer";
+            grid-template-columns:1fr;
+         }
+    
+        }
+
+     </style>
+    
+</head>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="/image/logo.png" alt="logo" width="80px" style="float:left;">
+            <div class="texto">
+                <h1>Pardon</h1>
+                <p>"Mon Dieu, toi qui es si bon,accorde-moi ta grâce! Ta tendresse est si grande,efface mes fautes, lave-moi complètement 
+                    de mes torts, et purifie-moi de mon péché.je t'ai désobei, je le reconnais; ma faute est toujours là, je la revois sans cesse."(Ps 51v1-2)
+                </p>
+            </div>
+        </header>
+        <nav class="menu">
+            <ul> 
+                <li><a href="index.html">accueil</li>
+                <li><a href="vrai-chemin.html">Vrai Chemin</a></li>
+                <li><a href="sanctification.html">Sanctification</a></li>
+                <li><a href="réveil spirituel.html">Réveil Spirituel</a></li>
+                <li><a href="consécration.html">Consécration</a></li>
+                <li><a href="esprit-saint.html">Esprit-Saint</a></li>
+                <li><a href="pardon.html">Pardon</a></li>
+                <li><a href="apropos.html">Apropos</a></li>
+                <li><a href="contactez-nous.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h2>c'est quoi le pardon?</h2>
+            <p>
+                Le pardon est l'acte de renoncer à sa rancoeur et á son désir de vengeance face à une faute ou une offense, 
+                en chisissant de ne pas en tenir rigueur à l'autre, souvent dans une démarche de libération personnelle, de 
+                compassion et de guérison, sans pour autant oublier ou excuser l'acte. 
+                Le pardon, dans l'enseignement Chrétien, est un acte d'amour qui se vit dans la grâce infinie de Dieu. En effet 
+                Dieu a envoyé son propre fils, Jésus, pour nous sauver et nous libérer du péché.Il montre ainsi, par sa grâce et 
+                son amour infini pour l'humanité, que tout pécheur est susceptible d'ètre pardonné. 
+                Pardonner, c'est transformer une dette de haine en une libération, permettant de rétablir une forme d'équilibre intérieur 
+                et relationnel.
+            </p>
+            <h2>Aspects clés du pardon</h2>
+            <p>
+                <b>libération:</b>Se défaire du poids des émotions négatives colère, <a href="re.html">ressentiment</a>liées au passé pour avancer.<br> 
+                <b>Renonciation:</b>Abandonner l'idée de punir ou de se venger.<br> 
+                <b>Compassion:</b>Chercher à comprendre l'offenseur avec bienveillnce, sans nier l souffrance.<br> 
+                <b>Processus intérieur:</b>C'est un choix volontaire qui demande du temps, de la reconnaissance de la blessure, 
+                mais pas nécessairement l'oubli ou l'excuse. 
+            </p>
+            <h2>le vrai pardon</h2>
+            <p>
+                le pardon est un processeur intérieur, sincère et libre , qui permet de se libérer des blessures passées et de renforcer 
+                ses liens avec les autres.le pardon est un soin pour notre coeur car, faire le choix de pardonner, c'est faire le choix de 
+                guérir son coeur.Nous avons tous(tes) vécu des évènements qui nous ont blessé(e)s, que ce soit pendant l'enfance, l'adolescente 
+                l'âge adulte.. et sur notre coeur, certaines de ces blessures sont toujours à vif. 
+                Le pardon est le résultat de l'acte de pardonner, la rémission d'une faute.C'est tenir une offense, une faute pour nulle.  
+            </p>
+            <h2>Le but du pardon</h2>
+            <p>
+                Afin de recevoir le pardon de nos péchés , nous devons pardonner aux autres.Pardonner aux autres nous permet de surmonter la <a href="col.html">colère</a>, 
+                l'amertume ou le désir de vengeance.le pardon peut guérir des blessures spirituelles et apporter la paix et l'amour que seul Dieu peut pardonner. 
+                le pardon revêt une importance capitale pour la santé et le bienêtre mental.Psychologiquement,le pardon peut être defini comme un processus par lequel 
+                une personne libère des sentiments de rancune ou de vengeance envers quelqu'un qui l'a blessée.
+            </p>
+            <h2>Qu'est-ce que prdonner?</h2>
+            <p>
+                 Pardonner, c'est porter vous-même le mal ou le tort et choisir de ne plus jamais vous en souvenir.Il est coûteux de pardonner, 
+                celui qui pardonne paie le prix de l'injure. 
+                
+            </p>
+            <h2>comment passer de l'amertume au pardon</h2>
+            <p>
+                Les étapes suivantes vous montreront comment abandonner votre amertume:
+                <ol>
+                    <li><b>Reconnaissez que Dieu est le juge:</b>Les gens ont besoin d'être jugés pour leurs mauvaises actions, mais nous ne sommes pas ceux qui doivent les juger.</li>
+                    <li><b>Confessez votre péché à Dieu:</b>L'autre personne vous a peut-être causé un grand tort.</li>
+                    <li><b>Prononcez une sentence de mort sur le ressentiment et l'amertume:</b>Le ressentiment et l'amertume ne sont pas des vices sans importance.Ils font partie 
+                    des péchés les plus graves garder de l'amertume c'est vivre selon la chair.</li>
+                </ol>
+            </p>
+
+             <div class="buttons">
+        <a href="esprit-saint.html">préc</a>
+        <a href="apropos.html">suiv</a>
+        </div>
+        </main>
+        <aside class="sidebar">
+            <img src="/image/nature.jpeg" alt="la nature" width="190px" height="1200px">       
+        </aside>
+        <footer class="footer">
+            <p class="logo">
+                <img src="/image/logo.png"  alt="logo" width="80px" style="float:left;">
+            </p>
+            <ul>
+                <li><a href="fruit de l'esprit.html">Fruit de L'Esprit</a></li>
+                <li><a href="prophétie.html">Prophétie</a></li>
+                <li><a href="nouvelle jerusalem.html">Nouvelle Jerusalem</a></li>
+                <li><a href="prier éfficacment.html">Prier Éfficacement</a></li>
+                <li><a href="apostasie.html">Apostasie</a></li>
+            </ul>
+            <div>
+                <p><small>Source Intarissable est préparée pour orienter des âmes,qui sont troublées.</small></p>
+                <p><small>Copyright 2025 source intarissable.Tous droits reservés.</small></p>
+            </div>
+        </footer>
+    
+</body>
+</html>
